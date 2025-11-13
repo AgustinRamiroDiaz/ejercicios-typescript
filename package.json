@@ -1,0 +1,29 @@
+{
+  "name": "ejercicios-typescript",
+  "version": "1.0.0",
+  "description": "Ejercicios de TypeScript para aprender programación con temática de videojuegos",
+  "type": "module",
+  "scripts": {
+    "test": "tsc && node --test './**/*.test.js'",
+    "test:if": "tsc && node --test './01-if/*.test.js'",
+    "test:while": "tsc && node --test './02-while/*.test.js'",
+    "test:arrays": "tsc && node --test './03-arrays/*.test.js'",
+    "test:for": "tsc && node --test './04-for/*.test.js'",
+    "test:diccionarios": "tsc && node --test './05-diccionarios/*.test.js'",
+    "test:objetos": "tsc && node --test './06-objetos/*.test.js'"
+  },
+  "keywords": [
+    "typescript",
+    "ejercicios",
+    "aprendizaje",
+    "programacion"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.0.0"
+  }
+}
+
