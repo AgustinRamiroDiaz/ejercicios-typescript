@@ -16,23 +16,48 @@ export function atacarHastaDerrotar(vidaEnemigo: number, danioPorAtaque: number)
   // ========== TU CÓDIGO AQUÍ ==========
   // Ataca al enemigo hasta que su vida llegue a 0 o menos
   // Retorna el número de ataques necesarios
-  let ataques = 0;
+  let ataques = 0
+  while (vidaEnemigo > 0) {vidaEnemigo = vidaEnemigo- danioPorAtaque;
+                           ataques = ataques +1}
   
-  
-  // ====================================
   return ataques;
 }
+console.log ((atacarHastaDerrotar)(60, 10))
+
+// ====================================
+
+
+  let items: string[] =["pecho", "casco", "botas", "guantes", "armadura"]
+  let indice = 0;
+  let maxIntentos = 3;
+
 
 export function buscarItem(items: string[], itemBuscado: string, maxIntentos: number): string | null {
+
   // ========== TU CÓDIGO AQUÍ ==========
   // Busca el item en el array hasta encontrarlo o hasta agotar los intentos
   // Retorna el item si lo encuentra, o null si no lo encuentra
-  let intentos = 0;
-  let indice = 0;
-  
-  throw new Error("Función no implementada");
   // ====================================
+
+let indice = 0;
+let nroInventario = 1
+
+  while (maxIntentos>0) {
+    
+    if (itemBuscado == (items[indice])) {
+      
+      return `${items[indice]}[${nroInventario}]`;
+
+    }
+      else {maxIntentos = maxIntentos - 1;
+            indice = indice +1
+            nroInventario = nroInventario +1
+      }
 }
+  return null
+}
+console.log (buscarItem(items, "botas", 4))
+
 
 export function subirNivel(nivelActual: number, nivelObjetivo: number, experienciaPorNivel: number): number {
   // ========== TU CÓDIGO AQUÍ ==========
@@ -41,9 +66,16 @@ export function subirNivel(nivelActual: number, nivelObjetivo: number, experienc
   // Retorna la experiencia total necesaria
   let experienciaTotal = 0;
   let nivel = nivelActual;
+  while(nivel<nivelObjetivo) {
+    experienciaTotal= experienciaTotal + experienciaPorNivel;
+    nivel = nivel +1;
+  }
   
   
   // ====================================
   return experienciaTotal;
+  
+ 
 }
 
+console.log(subirNivel(3, 10, 70))

@@ -6,36 +6,53 @@
  * INSTRUCCIONES:
  * 1. Completa las funciones usando métodos de arrays y operaciones básicas
  */
+  let inventario = ["elemento0", "elemento3", "elemento2"]
 
 export function agregarItem(inventario: string[], nuevoItem: string): string[] {
   // ========== TU CÓDIGO AQUÍ ==========
   // Agrega el nuevoItem al inventario y retorna el nuevo array
-  
+  inventario.push (nuevoItem)
+  return inventario
   throw new Error("Función no implementada");
+  
   // ====================================
 }
+agregarItem(inventario, "hola")
+console.log (inventario)
+agregarItem(inventario, "chau")
+console.log (inventario)
 
+let enemigos = ["pedro","juan","cacho","pepe"]
 export function contarEnemigosDerrotados(enemigos: string[]): number {
   // ========== TU CÓDIGO AQUÍ ==========
   // Retorna la cantidad de enemigos en el array
+let enemigosDerrotados: number = enemigos.length
+return enemigosDerrotados
+
   
-  throw new Error("Función no implementada");
+
   // ====================================
 }
+console.log(contarEnemigosDerrotados(enemigos))
 
+let items: string[] = ["huevos"]
 export function encontrarItemMasRaro(items: string[]): string | null {
   // ========== TU CÓDIGO AQUÍ ==========
   // Retorna el primer item que encuentres en el array
   // Si el array está vacío, retorna null
+  return items[0] || null // use el operador "or" para no usar un "If"
+
   
   throw new Error("Función no implementada");
   // ====================================
 }
-
+console.log(encontrarItemMasRaro(items))
+let puntajes = [15, 30, 45]
 export function calcularPuntajeTotal(puntajes: number[]): number {
   // ========== TU CÓDIGO AQUÍ ==========
   // Suma todos los puntajes del array
   // Si el array está vacío, retorna 0
+  
   
   throw new Error("Función no implementada");
   // ====================================
