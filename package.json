@@ -4,13 +4,13 @@
   "description": "Ejercicios de TypeScript para aprender programación con temática de videojuegos",
   "type": "module",
   "scripts": {
-    "test": "tsc && node --test './**/*.test.js'",
-    "test:if": "tsc && node --test './01-if/*.test.js'",
-    "test:while": "tsc && node --test './02-while/*.test.js'",
-    "test:arrays": "tsc && node --test './03-arrays/*.test.js'",
-    "test:for": "tsc && node --test './04-for/*.test.js'",
-    "test:diccionarios": "tsc && node --test './05-diccionarios/*.test.js'",
-    "test:objetos": "tsc && node --test './06-objetos/*.test.js'"
+    "test": "node --import tsx --test './**/*.test.ts'",
+    "test:if": "node --import tsx --test './01-if/*.test.ts'",
+    "test:while": "node --import tsx --test './02-while/*.test.ts'",
+    "test:arrays": "node --import tsx --test './03-arrays/*.test.ts'",
+    "test:for": "node --import tsx --test './04-for/*.test.ts'",
+    "test:diccionarios": "node --import tsx --test './05-diccionarios/*.test.ts'",
+    "test:objetos": "node --import tsx --test './06-objetos/*.test.ts'"
   },
   "keywords": [
     "typescript",
@@ -23,7 +23,7 @@
   "devDependencies": {
     "@types/node": "^20.0.0",
     "ts-node": "^10.9.2",
+    "tsx": "^4.20.6",
     "typescript": "^5.0.0"
   }
 }
-
