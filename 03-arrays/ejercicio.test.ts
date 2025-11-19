@@ -33,11 +33,15 @@ test("contarEnemigosDerrotados - varios enemigos", () => {
 
 test("encontrarItemMasRaro - array vacío", () => {
   assert.strictEqual(encontrarItemMasRaro([]), null);
+  assert.strictEqual(encontrarItemMasRaro([""]), "");
 });
 
 test("encontrarItemMasRaro - encontrar primer item", () => {
   assert.strictEqual(encontrarItemMasRaro(["espada", "escudo"]), "espada");
-  assert.strictEqual(encontrarItemMasRaro(["poción rara", "espada"]), "poción rara");
+  assert.strictEqual(
+    encontrarItemMasRaro(["poción rara", "espada"]),
+    "poción rara"
+  );
 });
 
 test("calcularPuntajeTotal - array vacío", () => {
@@ -111,4 +115,3 @@ test("encontrarEnemigoMasFuerte - varios enemigos", () => {
     "Orco"
   );
 });
-
