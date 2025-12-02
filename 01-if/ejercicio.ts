@@ -55,31 +55,17 @@ export function calcularDanio(nivel: number, tieneArma: boolean): number {
   // - Si tiene arma: daño base = nivel * 10
   // - Si no tiene arma: daño base = nivel * 5
   // - Si el nivel es mayor a 10, multiplica el daño por 1.5
-  /*
-    if(nivel>10){daniobase = nivel * 1.5} //Esta es la primera forma que se me ocurrió, me parece la mas simple
-     else       {daniobase = nivel}
-    if(tieneArma === true) {daniobase = daniobase *10}
-     else                  {daniobase = daniobase *5}
-   return daniobase
-   */
-  /*
-   if(tieneArma === true) {daniobase = 10} //Esta forma surgio de intentar invertir los if, al principio pensaba que el orden era indiferente pero me di cuenta
-    else                  {daniobase = 5}  //que en este segundo caso daniobase tenia que tener un valor asignado para que el otro if funcione pero creo que
-  if(nivel>10){daniobase = daniobase * nivel * 1.5} //hay una mejor forma de resolverlo.
-    else       {daniobase = daniobase * nivel}  
-  return daniobase
-  */
-  let daniobase: number = nivel;
+
+  let daniobase: number = 1;
   if (tieneArma == true) {
     daniobase = daniobase * 10;
   } //Aca logre poder conmutar los if sin que afecte el resultado final, podria haberlo hecho sin declarar daniobase
   else {
     daniobase = daniobase * 5;
   } //de esta manera: if(......) {daniobase = 1 * (...)} de esta forma tambien me aseguro que los if
-
   if (nivel > 10) {
-    daniobase = daniobase * 1.5;
-  }
+    daniobase = daniobase * nivel * 1.5;
+  } else daniobase = daniobase * nivel; // funcionen idependientemente del orden.
   return daniobase;
 }
 

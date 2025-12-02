@@ -12,6 +12,8 @@
  *    el nivel objetivo
  */
 
+// ====================================
+
 export function atacarHastaDerrotar(
   vidaEnemigo: number,
   danioPorAtaque: number
@@ -43,9 +45,9 @@ export function buscarItem(
   // ========== TU CÓDIGO AQUÍ ==========
   // Busca el item en el array hasta encontrarlo o hasta agotar los intentos
   // Retorna el item si lo encuentra, o null si no lo encuentra
-  // ====================================
 
   let indice = 0;
+  let nroInventario = 1;
 
   while (maxIntentos > 0) {
     if (itemBuscado == items[indice]) {
@@ -53,11 +55,14 @@ export function buscarItem(
     } else {
       maxIntentos = maxIntentos - 1;
       indice = indice + 1;
+      nroInventario = nroInventario + 1;
     }
   }
   return null;
 }
 console.log(buscarItem(items, "botas", 4));
+
+// ====================================
 
 export function subirNivel(
   nivelActual: number,
@@ -75,7 +80,6 @@ export function subirNivel(
     nivel = nivel + 1;
   }
 
-  // ====================================
   return experienciaTotal;
 }
 
