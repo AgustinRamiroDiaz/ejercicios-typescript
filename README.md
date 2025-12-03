@@ -13,6 +13,7 @@ Los ejercicios están organizados en niveles progresivos:
 5. **05-diccionarios** - Objetos como diccionarios (Record/Map)
 6. **06-objetos** - Objetos y tipos personalizados
 7. **07-clases** - Clases y programación orientada a objetos
+8. **08-funciones** - Funciones de alto orden (map, filter, reduce)
 
 ## 🚀 Cómo empezar
 
@@ -51,6 +52,9 @@ npm test 06-objetos
 
 # Ejercicio de clases
 npm test 07-clases
+
+# Ejercicio de funciones de alto orden
+npm test 08-funciones
 ```
 
 ### 3. Ejecutar todos los tests
@@ -82,6 +86,7 @@ Completar todos los ejercicios y entender los conceptos fundamentales de program
 - Arrays para manejar listas de datos
 - Objetos para estructurar información compleja
 - Clases para crear tipos personalizados con comportamiento
+- Funciones de alto orden para transformar y procesar datos
 
 ¡Diviértete aprendiendo! 🚀
 
