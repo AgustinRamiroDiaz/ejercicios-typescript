@@ -10,7 +10,8 @@
     "test:arrays": "tsc && node --test './03-arrays/*.test.js'",
     "test:for": "tsc && node --test './04-for/*.test.js'",
     "test:diccionarios": "tsc && node --test './05-diccionarios/*.test.js'",
-    "test:objetos": "tsc && node --test './06-objetos/*.test.js'"
+    "test:objetos": "tsc && node --test './06-objetos/*.test.js'",
+    "test:clases": "tsc && node --test './07-clases/*.test.js'"
   },
   "keywords": [
     "typescript",

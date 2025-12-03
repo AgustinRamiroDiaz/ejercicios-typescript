@@ -12,6 +12,7 @@ Los ejercicios están organizados en niveles progresivos:
 4. **04-for** - Bucles for
 5. **05-diccionarios** - Objetos como diccionarios (Record/Map)
 6. **06-objetos** - Objetos y tipos personalizados
+7. **07-clases** - Clases y programación orientada a objetos
 
 ## 🚀 Cómo empezar
 
@@ -47,6 +48,9 @@ npm test 05-diccionarios
 
 # Ejercicio de objetos
 npm test 06-objetos
+
+# Ejercicio de clases
+npm test 07-clases
 ```
 
 ### 3. Ejecutar todos los tests
@@ -77,6 +81,7 @@ Completar todos los ejercicios y entender los conceptos fundamentales de program
 - Bucles para repetir acciones
 - Arrays para manejar listas de datos
 - Objetos para estructurar información compleja
+- Clases para crear tipos personalizados con comportamiento
 
 ¡Diviértete aprendiendo! 🚀
 
