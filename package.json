@@ -15,7 +15,7 @@
     "test:funciones": "tsc && node --test './08-funciones/*.test.js'",
     "test:errores": "tsc && node --test './09-errores/*.test.js'",
     "test:recursion": "tsc && node --test './10-recursion/*.test.js'",
-    "test:funcional": "tsc && node --test './11-funcional/*.test.js'",
+    "test:strategy": "tsc && node --test './11-strategy/*.test.js'",
     "test:tipos-avanzados": "tsc && node --test './12-tipos-avanzados/*.test.js'"
   },
   "keywords": [

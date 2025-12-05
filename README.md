@@ -16,7 +16,7 @@ Los ejercicios están organizados en niveles progresivos:
 8. **08-funciones** - Funciones de alto orden (map, filter, reduce)
 9. **09-errores** - Manejo de errores (try/catch, throw, custom errors)
 10. **10-recursion** - Recursión y algoritmos recursivos
-11. **11-funcional** - Programación funcional (inmutabilidad, funciones puras)
+11. **11-strategy** - Patrón Strategy (preparación para frameworks de videojuegos)
 12. **12-tipos-avanzados** - Tipos avanzados de TypeScript (generics, utility types)
 
 ## 🚀 Cómo empezar
@@ -66,8 +66,8 @@ npm test 09-errores
 # Ejercicio de recursión
 npm test 10-recursion
 
-# Ejercicio de programación funcional
-npm test 11-funcional
+# Ejercicio de patrón Strategy
+npm test 11-strategy
 
 # Ejercicio de tipos avanzados
 npm test 12-tipos-avanzados
@@ -105,7 +105,7 @@ Completar todos los ejercicios y entender los conceptos fundamentales de program
 - Funciones de alto orden para transformar y procesar datos
 - Manejo de errores para crear código robusto
 - Recursión para resolver problemas complejos
-- Programación funcional para código más predecible
+- Patrón Strategy para diseño flexible (esencial en frameworks de videojuegos)
 - Tipos avanzados de TypeScript para máxima seguridad
 
 ¡Diviértete aprendiendo! 🚀
