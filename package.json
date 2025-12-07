@@ -16,7 +16,8 @@
     "test:errores": "tsc && node --test './09-errores/*.test.js'",
     "test:recursion": "tsc && node --test './10-recursion/*.test.js'",
     "test:strategy": "tsc && node --test './11-strategy/*.test.js'",
-    "test:tipos-avanzados": "tsc && node --test './12-tipos-avanzados/*.test.js'"
+    "test:tipos-avanzados": "tsc && node --test './12-tipos-avanzados/*.test.js'",
+    "test:grafos": "tsc && node --test './13-grafos/*.test.js'"
   },
   "keywords": [
     "typescript",
