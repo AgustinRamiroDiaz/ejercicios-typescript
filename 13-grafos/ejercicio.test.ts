@@ -5,7 +5,6 @@ import {
   GrafoListaAdyacencia,
   GrafoConjuntoAristas,
   GrafoMatrizAdyacencia,
-  GrafoMapAristas,
   MaquinaEstadosEnemigo,
   SistemaHabitaciones,
   Habitacion,
@@ -163,7 +162,6 @@ probarImplementacionGrafo(
   "GrafoMatrizAdyacencia",
   () => new GrafoMatrizAdyacencia<string>()
 );
-probarImplementacionGrafo("GrafoMapAristas", () => new GrafoMapAristas<string>());
 
 // ============================================================
 // Tests para Máquina de Estados

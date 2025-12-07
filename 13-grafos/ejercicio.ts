@@ -194,7 +194,7 @@ export class GrafoListaAdyacencia<V> implements GrafoDirigido<V> {
  *
  * Estructura interna:
  * - vertices: Set<V> para almacenar todos los vértices
- * - aristas: Set<string> donde cada arista se representa como "origen->destino"
+ * - aristas: Set<[V, V]> donde cada arista es una tupla [origen, destino]
  *
  * Ventajas:
  * - Simple y fácil de entender
@@ -202,31 +202,17 @@ export class GrafoListaAdyacencia<V> implements GrafoDirigido<V> {
  *
  * Desventajas:
  * - Menos eficiente para buscar adyacentes O(n)
+ * - Los Sets comparan por referencia, no por valor, así que necesitas
+ *   iterar para buscar aristas específicas
  */
 export class GrafoConjuntoAristas<V> implements GrafoDirigido<V> {
   // ========== TU CÓDIGO AQUÍ ==========
   // Propiedades:
   // - vertices: Set<V>
-  // - aristas: Set<string> (usa this.codificarArista(origen, destino))
+  // - aristas: Set<[V, V]>
 
   constructor() {
     throw new Error("Constructor no implementado");
-  }
-
-  /**
-   * Método auxiliar para codificar una arista como string
-   * Usa JSON.stringify para manejar cualquier tipo de vértice
-   */
-  private codificarArista(origen: V, destino: V): string {
-    return `${JSON.stringify(origen)}->${JSON.stringify(destino)}`;
-  }
-
-  /**
-   * Método auxiliar para decodificar una arista desde string
-   */
-  private decodificarArista(arista: string): [V, V] {
-    const [origen, destino] = arista.split("->");
-    return [JSON.parse(origen), JSON.parse(destino)];
   }
 
   agregarVertice(vertice: V): void {
