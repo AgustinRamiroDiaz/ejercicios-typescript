@@ -16,15 +16,26 @@ class Contador {
     this.valor++;
   }
 }
-let contador = new Contador();
-console.log(contador.valor);
-contador.incrementar();
-console.log(contador.valor);
-contador.incrementar();
-console.log(contador.valor);
+let contadorA = new Contador();
+let contadorB = new Contador();
+
+console.log(contadorA.valor);
+console.log(contadorB.valor);
+
+contadorA.incrementar();
+console.log(contadorA.valor);
+console.log(contadorB.valor);
+
+contadorB.incrementar();
+contadorB.incrementar();
+console.log(contadorA.valor);
+console.log(contadorB.valor);
 
 // Predicción 1:
 // Predicción 2:
 // Predicción 3:
+// Predicción 4:
+// Predicción 5:
+// Predicción 6:
 
 export {};

@@ -96,14 +96,16 @@ npx tsx 14-prediccion/05-arrays/01-acceso-basico.ts
 npx tsx 14-prediccion/05-arrays/16-map.ts
 ```
 
-### 06-clases/ (15 ejercicios)
-- Creación de instancias
+### 06-clases/ (20 ejercicios)
+- Creación de múltiples instancias
 - Propiedades y métodos
+- Interacción entre objetos
 - Herencia con extends
 - Propiedades privadas
 - Métodos estáticos
 - Getters y setters
 - Composición
+- Referencias a objetos
 - **Nivel**: Avanzado
 
 **Ejemplo de ejecución:**
@@ -165,7 +167,7 @@ A diferencia de otras secciones, aquí **no hay tests automatizados**. El objeti
 | Loops | 18 | Intermedio |
 | Funciones | 15 | Intermedio-Avanzado |
 | Arrays | 20 | Intermedio-Avanzado |
-| Clases | 15 | Avanzado |
-| **Total** | **98** | - |
+| Clases | 20 | Avanzado |
+| **Total** | **103** | - |
 
 ¡Buena suerte y que disfrutes desarrollando tu capacidad de predicción de código!

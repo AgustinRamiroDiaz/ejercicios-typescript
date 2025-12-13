@@ -85,13 +85,13 @@ npm test
 
 La sección 14 es diferente: **no tiene tests**. El objetivo es que predijas mentalmente qué imprimirá el código antes de ejecutarlo.
 
-Esta sección contiene **98 ejercicios** organizados en 6 subcarpetas:
+Esta sección contiene **103 ejercicios** organizados en 6 subcarpetas:
 - `01-variables/` - 15 ejercicios de variables básicas
 - `02-condicionales/` - 15 ejercicios de if/else/switch
 - `03-loops/` - 18 ejercicios de for/while/do-while
 - `04-funciones/` - 15 ejercicios de funciones
 - `05-arrays/` - 20 ejercicios de arrays y métodos
-- `06-clases/` - 15 ejercicios de clases y POO
+- `06-clases/` - 20 ejercicios de clases, POO e interacción entre objetos
 
 Para ejecutar un ejercicio individual:
 

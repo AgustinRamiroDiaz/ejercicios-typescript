@@ -17,8 +17,21 @@ class Enemigo {
   }
 }
 let goomba = new Enemigo("Goomba");
-goomba.atacar();
+let koopa = new Enemigo("Koopa");
+let bowser = new Enemigo("Bowser");
 
-// Predicción:
+goomba.atacar();
+koopa.atacar();
+bowser.atacar();
+
+goomba.nombre = "Goomba Gigante";
+goomba.atacar();
+koopa.atacar();
+
+// Predicción 1:
+// Predicción 2:
+// Predicción 3:
+// Predicción 4:
+// Predicción 5:
 
 export {};
