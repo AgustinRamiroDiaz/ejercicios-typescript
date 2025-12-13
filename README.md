@@ -18,6 +18,8 @@ Los ejercicios están organizados en niveles progresivos:
 10. **10-recursion** - Recursión y algoritmos recursivos
 11. **11-strategy** - Patrón Strategy (preparación para frameworks de videojuegos)
 12. **12-tipos-avanzados** - Tipos avanzados de TypeScript (generics, utility types)
+13. **13-grafos** - Estructuras de grafos
+14. **14-prediccion** - Predicción de código (sin tests)
 
 ## 🚀 Cómo empezar
 
@@ -78,6 +80,33 @@ npm test 12-tipos-avanzados
 ```bash
 npm test
 ```
+
+### 4. Sección especial: Predicción de Código (14-prediccion)
+
+La sección 14 es diferente: **no tiene tests**. El objetivo es que predijas mentalmente qué imprimirá el código antes de ejecutarlo.
+
+Esta sección contiene **98 ejercicios** organizados en 6 subcarpetas:
+- `01-variables/` - 15 ejercicios de variables básicas
+- `02-condicionales/` - 15 ejercicios de if/else/switch
+- `03-loops/` - 18 ejercicios de for/while/do-while
+- `04-funciones/` - 15 ejercicios de funciones
+- `05-arrays/` - 20 ejercicios de arrays y métodos
+- `06-clases/` - 15 ejercicios de clases y POO
+
+Para ejecutar un ejercicio individual:
+
+```bash
+# Ejemplo: primer ejercicio de variables
+npx tsx 14-prediccion/01-variables/01-asignacion-basica.ts
+
+# Ejemplo: ejercicio de switch
+npx tsx 14-prediccion/02-condicionales/11-switch.ts
+
+# Ejemplo: ejercicio de closures
+npx tsx 14-prediccion/04-funciones/14-closure-basico.ts
+```
+
+**Importante**: Escribe tus predicciones en los comentarios ANTES de ejecutar el código. Consulta `14-prediccion/README.md` para más detalles sobre cómo usar esta sección.
 
 ## 📝 Cómo resolver los ejercicios
 
